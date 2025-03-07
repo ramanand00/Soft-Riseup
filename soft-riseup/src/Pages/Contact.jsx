@@ -1,12 +1,13 @@
+import React from "react";
+import "./Auth.css";import "./Contact.css";
+
 const Contact = () => {
-    return (
-      <div className="p-10">
-        <h1 className="text-3xl font-bold">Contact Us</h1>
-        <p className="mt-4 text-gray-600">📧 Email: contact@soft-riseup.com</p>
-        <p>📍 Location: Kathmandu, Nepal</p>
-      </div>
-    );
-  };
-  
-  export default Contact;
-  
+  return (
+    <div className="contact-container">
+      <h1>Contact Us</h1>
+      {/* Add your page content here */}
+    </div>
+  );
+};
+
+export default Contact;

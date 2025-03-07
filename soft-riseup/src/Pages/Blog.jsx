@@ -1,11 +1,13 @@
+import React from "react";
+import "./Auth.css";import "./Blog.css";
+
 const Blog = () => {
-    return (
-      <div className="p-10">
-        <h1 className="text-3xl font-bold">Latest Blogs</h1>
-        <p className="mt-4 text-gray-600">Stay updated with our latest tech insights and articles.</p>
-      </div>
-    );
-  };
-  
-  export default Blog;
-  
+  return (
+    <div className="blog-container">
+      <h1>Our Blog</h1>
+      {/* Add your page content here */}
+    </div>
+  );
+};
+
+export default Blog;

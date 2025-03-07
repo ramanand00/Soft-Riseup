@@ -1,30 +1,37 @@
-import { motion } from "framer-motion";
+// src/Pages/Home.js
+
+import React from 'react';
+import './Home.css'; // Import the CSS file for styling
 
 const Home = () => {
   return (
-    <motion.div
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-100"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-    >
-      <h1 className="text-5xl font-bold text-blue-600">Welcome to Soft-Riseup</h1>
-      <motion.p
-        className="mt-4 text-lg text-gray-600 text-center max-w-lg"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 1 }}
-      >
-        We build innovative software solutions that help businesses grow.
-      </motion.p>
-      <motion.button
-        className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-700"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-      >
-        Get Started
-      </motion.button>
-    </motion.div>
+    <div className="home-container">
+    <section className="home">
+      <div className="home-content">
+        <h1>Welcome to Soft-Riseup</h1>
+        <p>Get started with our platform to create and manage your projects.</p>
+        <button className="btn">Get Started</button>
+      </div>
+      <div className="home-image">
+        <img src="https://via.placeholder.com/400" alt="Home" />
+      </div>
+      <div className="home-features">
+        <h2>Features</h2>
+        <ul>
+          <li>Project Management</li>
+          <li>Task Tracking</li>
+          <li>Team Collaboration</li>
+          <li>File Sharing</li>
+        </ul>
+      </div>
+      <div className="home-contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@soft-riseup.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+      
+    </section>
+    </div>
   );
 };
 
